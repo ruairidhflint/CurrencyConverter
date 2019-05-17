@@ -22,16 +22,29 @@ date.innerText = `Exchange rates last updated : ${parsedRates1.date}`
 button.addEventListener('click', conversion1)
 
 function conversion1(){
-
-    if(isNaN(input.value)) {
+  
+    const inputValue = stripCurrencySymbol(input.value);
+  
+    if(isNaN(inputValue)) {
         result.textContent = "Please enter a valid number";
     }
     else {
-    let newValue = input.value * parsedRates1.rates[selector.value]
+            
+      let newValue = inputValue * parsedRates1.rates[selector.value]
 
-    result.innerHTML = `${newValue} <br> ${selector.value}`;
+      result.innerHTML = `${newValue} <br> ${selector.value}`;
     }
 }
 
+function stripCurrencySymbol(inputValue){
+  const strippedInput = inputValue.split('£');
+  
+  if(strippedInput.length > 1){
+    return strippedInput[1];
+  }
+  
+  return inputValue;
+  
+}
 
     
