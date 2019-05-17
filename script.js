@@ -8,12 +8,8 @@ function httpGet(theUrl)
 
 let rates1 = httpGet("https://api.exchangeratesapi.io/latest?base=GBP");
 
-let btc = httpGet("https://chain.so/api/v2/get_info/BTC");
-
-
-
 let parsedRates1 = JSON.parse(rates1);
-let parsedBTC = JSON.parse(btc);    
+
 
 let input = document.querySelector('input');
 let result = document.querySelector('.result');

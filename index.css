@@ -111,11 +111,16 @@ button:hover {
     font-size: 5rem;
 }
 
-.date {
+
+a {
+    text-decoration: none;
+    color: inherit;
     position: absolute;
     bottom: 0;
     margin-bottom: 3rem;
 }
+
+
 
 @media (max-width: 500px) {
     body {
