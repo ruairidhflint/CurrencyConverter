@@ -1,45 +1,38 @@
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
+
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
+
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 :root {
@@ -58,8 +51,8 @@ h1 {
     display: inline-block;
     font-size: 4rem
 }
-.container{
 
+.container {
     width: 450px;
     height: 450px;
     display: flex;
@@ -67,15 +60,15 @@ h1 {
     align-items: center;
     justify-content: flex-start;
     position: absolute;
-	top:0;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	margin: auto;
-	border: 1px solid rgb(111, 111, 111);
-	padding: 40px;
-	
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border: 1px solid rgb(111, 111, 111);
+    padding: 40px;
 }
+
 h1 {
     font-weight: bold;
     display: inline-block;
@@ -86,6 +79,7 @@ h1 {
     /* border-bottom: 1px solid black; */
     padding-bottom: 1rem;
 }
+
 .input-box {
     border: 1px solid black;
     display: inline-block;
@@ -96,26 +90,27 @@ h1 {
     margin-bottom: 1rem;
 }
 
-.currency{
+.currency {
     width: 60px;
     margin-bottom: 3rem;
     margin-top: 1rem;
 }
 
-button{
+button {
     width: 10rem;
     height: 3rem;
     margin-bottom: 5rem;
 }
-button:hover{
+
+button:hover {
     /* border: 2px solid dodgerblue; */
     background-color: rgb(233, 231, 231);
-    
 }
+
 .result {
     font-size: 5rem;
-        
 }
+
 .date {
     position: absolute;
     bottom: 0;
@@ -126,32 +121,24 @@ button:hover{
     body {
         width: auto;
     }
-
-    .container{
+    .container {
         width: auto;
         border: 0px solid black;
         margin: 0;
-
     }
-
     h1 {
         width: auto;
         font-size: 2rem;
-        
     }
-
-    .input-box{
+    .input-box {
         width: auto;
     }
-
     .result {
         width: auto;
         font-size: 3rem;
     }
-
     .date {
         position: absolute;
         bottom: 0;
     }
-
 }
