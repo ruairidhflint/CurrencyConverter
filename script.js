@@ -15,7 +15,10 @@ let parsedRates1 = JSON.parse(rates1);
 let input = document.querySelector('input');
 let result = document.querySelector('.result');
 let button = document.querySelector('button');
-let selector = document.querySelector('.currency')
+let selector = document.querySelector('.currency');
+let date = document.querySelector('.date');
+
+date.innerText = `Exchange rates last updated : ${parsedRates1.date}`
 
 button.addEventListener('click', conversion1)
 
@@ -26,8 +29,8 @@ function conversion1(){
     }
     else {
     let newValue = input.value * parsedRates1.rates[selector.value]
-    .toPrecision(6);
-    result.textContent = newValue + " " + selector.value;
+    
+    result.innerHTML = `${newValue} <br> ${selector.value}`;
     }
 }
 
