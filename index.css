@@ -56,13 +56,12 @@ body {
 h1 {
     font-weight: bold;
     display: inline-block;
-    font-size: 4rem;
-
+    font-size: 4rem
 }
 .container{
 
-    width: 500px;
-    height: 500px;
+    width: 450px;
+    height: 450px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -78,10 +77,14 @@ h1 {
 	
 }
 h1 {
-    /* border: 1px solid blue; */
+    font-weight: bold;
     display: inline-block;
-    margin-bottom: 5rem;
+    font-size: 4rem;
+    display: inline-block;
+    margin-bottom: 4rem;
     text-align: center;
+    /* border-bottom: 1px solid black; */
+    padding-bottom: 1rem;
 }
 .input-box {
     border: 1px solid black;
@@ -90,22 +93,65 @@ h1 {
     height: 20px;
     padding: 10px;
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
 }
 
 .currency{
     width: 60px;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
 }
 
 button{
     width: 10rem;
     height: 3rem;
-    margin-bottom: 10rem;
+    margin-bottom: 5rem;
 }
-
+button:hover{
+    /* border: 2px solid dodgerblue; */
+    background-color: rgb(233, 231, 231);
+    
+}
+.result {
+    font-size: 5rem;
+        
+}
 .date {
     position: absolute;
     bottom: 0;
     margin-bottom: 3rem;
+}
+
+@media (max-width: 500px) {
+    body {
+        width: auto;
+    }
+
+    .container{
+        width: auto;
+        border: 0px solid black;
+        margin: 0;
+
+    }
+
+    h1 {
+        width: auto;
+        font-size: 2rem;
+        
+    }
+
+    .input-box{
+        width: auto;
+    }
+
+    .result {
+        width: auto;
+        font-size: 3rem;
+    }
+
+    .date {
+        position: absolute;
+        bottom: 0;
+    }
+
 }

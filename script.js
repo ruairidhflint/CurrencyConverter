@@ -29,10 +29,10 @@ function conversion1(){
     }
     else {
     let newValue = input.value * parsedRates1.rates[selector.value]
-    
+
     result.innerHTML = `${newValue} <br> ${selector.value}`;
     }
 }
-
+console.log(parsedRates1.rates)
 
     
